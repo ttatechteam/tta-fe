@@ -24,14 +24,14 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="/styles/wave_btn.css" />
         <link rel="stylesheet" href="/plugins/bottom-nav/style.css" />
 
-        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        {/* <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> */}
 
         {/* <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> */}
 
 
-        <script type="text/javascript" src="/scripts/index.js"></script>
+        {/* <script type="text/javascript" src="/scripts/index.js"></script>
         <script type="text/javascript" src="/plugins/testimonial/index.js"></script>
-        <script type="text/javascript" src="/plugins/bottom-nav/script.js"></script>
+        <script type="text/javascript" src="/plugins/bottom-nav/script.js"></script> */}
       </Head>
 
       <main>
