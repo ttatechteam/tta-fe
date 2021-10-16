@@ -42,14 +42,14 @@ $(document).ready(function () {
                 var showWaves = () => {
 
                     box.style.display = 'block';
-                    console.log(document.getElementsByClassName('primary-btn')[i], i)
+
 
                 }
 
                 var hideWaves = () => {
 
                     box.style.display = 'none';
-                    console.log(document.getElementsByClassName('primary-btn')[i], i)
+
                 }
 
                 var box = currentBtn.getElementsByClassName("wave-box")[0];
