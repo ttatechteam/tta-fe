@@ -364,13 +364,13 @@ $(document).ready(function () {
 
 
     document.getElementById('testi-prev').addEventListener("click", () => {
-        console.log("Prev clicked");
+
         $('.slick-prev').click()
     })
 
 
     document.getElementById('testi-next').addEventListener("click", () => {
-        console.log("Prev clicked");
+
         $('.slick-next').click()
     })
 
