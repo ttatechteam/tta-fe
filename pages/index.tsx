@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             <li><a href="#">Online Giving</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Register</a></li>
+            <li><Link href="/register">Register</Link></li>
             <li><button onClick={(ev) => {
               ev.preventDefault();
               router.push("/login")

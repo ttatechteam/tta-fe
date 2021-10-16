@@ -33,7 +33,7 @@ export const LoginForm = () => {
 
             <AppFormInputGroup iconSrc={PasswordIcon} type="password" placeholder="Password" />
 
-            <AppFormButton>Create Account</AppFormButton>
+            <AppFormButton>Sign In</AppFormButton>
 
         </AuthFormWrapper>
     )
