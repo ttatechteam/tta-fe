@@ -3,13 +3,35 @@ import type { NextPage } from 'next'
 import Head from "next/head";
 
 import { useRouter } from 'next/router'
+import { useEffect } from "react"
 
 import Link from "next/link"
 
 
+const useScript = (url: string) => {
+  useEffect(() => {
+    const script = document.createElement("script")
+
+    script.src = url
+    script.async = true
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [url])
+}
+
+
 const Home: NextPage = () => {
 
-  const router = useRouter()
+  const router = useRouter();
+
+  useScript("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+  useScript("/scripts/index.js")
+  useScript("/plugins/testimonial/index.js")
+  useScript("/plugins/bottom-nav/script.js")
   return (
     <>
 
@@ -23,6 +45,8 @@ const Home: NextPage = () => {
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="stylesheet" href="/styles/wave_btn.css" />
         <link rel="stylesheet" href="/plugins/bottom-nav/style.css" />
+
+
 
         {/* <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> */}
 
