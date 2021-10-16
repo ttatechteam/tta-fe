@@ -1,15 +1,21 @@
 import React from 'react'
 import style from "./AuthContainer.module.css";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
+import { useRouter } from "next/router"
 
 
 //images
 import BackImage from "../../sharedImages/back.png";
 import CofbLogo from "../../sharedImages/cofb_logo.png";
+import { route } from 'next/dist/server/router';
+
 
 const AuthContainer = ({ form, footerText, footerLinkUrl, footerLinkText, heading, headingMessage }:
     { form: any, footerText: string, footerLinkUrl: string, footerLinkText: string, heading: string, headingMessage: string }) => {
+
+
+    const router = useRouter();
     return (
         <div id={style.auth_page_wrapper}>
             <div id={style.auth_page_left_box}>
@@ -24,7 +30,12 @@ const AuthContainer = ({ form, footerText, footerLinkUrl, footerLinkText, headin
             </div>
             <div id={style.auth_page_right_box}>
 
-                <a id={style.auth_page_back} href="/"> <Image src={BackImage} layout="intrinsic" alt="back" /> </a>
+                <a onClick={
+                    (ev) => {
+                        ev.preventDefault();
+                        router.replace("/")
+                    }
+                } id={style.auth_page_back} href="#"> <Image src={BackImage} layout="intrinsic" alt="back" /> </a>
 
                 <Image layout="intrinsic" id={style.auth_page_logo} src={CofbLogo} />
 
