@@ -18,8 +18,8 @@
             font-family: Ubuntu;
             font-style: normal;
             font-weight: bold;
-            font-size: 25px;
-            line-height: 50px;
+            font-size: 16px;
+            line-height: 40px;
             text-align: center;
             color: #fff;
             padding: 10px 30px;
@@ -51,7 +51,7 @@
 
         #left_box_content {
             position: absolute;
-            bottom: 2%;
+            bottom: 4%;
             z-index: 12;
             width: 100%;
         }
@@ -117,4 +117,46 @@
 
         #auth_page_footer a {
             color: var(--primary);
+        }
+
+
+
+        
+        @media screen and (min-width:280px) and (max-width:1024px) {
+            #auth_page_wrapper {
+                position: relative !important;
+                grid-template-columns: 1fr !important;
+                grid-template-rows: 100% 100%;
+                min-height: 100% !important;
+                min-width: 100% !important;
+                grid-auto-flow: dense;
+            }
+
+
+               #auth_page_left_box {
+            background-size: 135% auto;
+            background-position: center;
+            margin-bottom: 100px !important;
+        }
+
+        #auth_page_left_box {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#auth_page_right_box {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+            /* html {
+                position: relative !important;
+            }
+
+            body {
+                position: relative !important;
+                margin: 20px !important;
+            } */
+
+
         }

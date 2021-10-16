@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "./AuthContainer.module.css";
 import Image from "next/image";
+import Link from "next/link"
 
 
 //images
@@ -23,7 +24,7 @@ const AuthContainer = ({ form, footerText, footerLinkUrl, footerLinkText, headin
             </div>
             <div id={style.auth_page_right_box}>
 
-                <a id={style.auth_page_back} href="#"> <Image src={BackImage} layout="intrinsic" alt="back" /> </a>
+                <a id={style.auth_page_back} href="/"> <Image src={BackImage} layout="intrinsic" alt="back" /> </a>
 
                 <Image layout="intrinsic" id={style.auth_page_logo} src={CofbLogo} />
 
@@ -33,7 +34,7 @@ const AuthContainer = ({ form, footerText, footerLinkUrl, footerLinkText, headin
                 {form}
 
                 <footer id={style.auth_page_footer}>
-                    <span>{footerText}</span> <a href={footerLinkUrl}>{footerLinkText}</a>
+                    <span>{footerText}</span> <Link href={footerLinkUrl}>{footerLinkText}</Link>
                 </footer>
             </div>
         </div>

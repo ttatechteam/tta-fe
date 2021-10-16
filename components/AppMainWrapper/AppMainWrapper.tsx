@@ -7,6 +7,7 @@ const AppMainWrapper = ({ children }: any) => {
                 <title>The Transformation Arena (TTA)</title>
                 <meta name="description" content="The Redeemed Christian Church of God - The Transformation Arena" />
                 <link rel="icon" href="/favicon.ico" />
+
             </Head>
             {children}
         </>

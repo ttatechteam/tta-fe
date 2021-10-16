@@ -18,7 +18,7 @@ const LoginPage = () => {
                 form={<LoginForm />}
                 footerText="Dont have an account?"
                 footerLinkText="Sign up"
-                footerLinkUrl="#" />
+                footerLinkUrl="/register" />
         </div>
     )
 }

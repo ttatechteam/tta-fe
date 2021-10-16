@@ -1,10 +1,5 @@
 @media screen and (min-width:280px) and (max-width:1024px) {
-    #auth-page-wrapper {
-        position: relative !important;
-        grid-template-columns: 100% !important;
-        min-height: 100% !important;
-        min-width: 100% !important;
-    }
+  
 
     html {
         position: relative !important;
@@ -12,7 +7,7 @@
 
     body {
         position: relative !important;
-        margin: 20px !important;
+
     }
 
 
