@@ -1,0 +1,35 @@
+    .form_group {
+            display: flex;
+            gap: 10px;
+            width: 500px;
+            height: 60px;
+            background: #F6F6F6;
+            border-radius: 9px;
+            margin: 20px;
+            padding: 10px 10px 10px 40px;
+            align-items: center;
+        }
+
+        .form_group input[type="text"] {
+            height: 100%;
+            width: 100%;
+            background: #F6F6F6;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+        .form_group input[type="email"] {
+            height: 100%;
+            width: 100%;
+            background: #F6F6F6;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+        .form_group input[type="password"] {
+            height: 100%;
+            width: 100%;
+            background: #F6F6F6;
+            font-size: 20px;
+            padding-left: 30px;
+        }

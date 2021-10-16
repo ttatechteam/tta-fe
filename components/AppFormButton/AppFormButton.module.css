@@ -1,0 +1,13 @@
+#auth_form_btn {
+    width: 500px;
+    height: 60px;
+    color: #fff;
+    background: var(--secondary);
+    border-radius: 9px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15.7859px;
+    line-height: 18px;
+    margin-top: 20px;
+}

@@ -1,0 +1,9 @@
+#auth_page_form {
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
